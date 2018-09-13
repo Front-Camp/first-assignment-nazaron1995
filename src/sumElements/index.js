@@ -12,6 +12,12 @@
  */
 const sumElements = arr => {
   /* your logic here...*/
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+      if (!(arr[i] instanceof Number)) {
+          sum = sum + arr[i];
+      }
+  }
+  return sum;
 };
-
 export default sumElements;

@@ -9,6 +9,14 @@
  */
 const truncate = (str, length = 0, replacer = '...') => {
   /* your logic here...*/
+  let arr = str.split("");
+  let ready_arr = [];
+  for(let i=0; i<length; i++){
+      ready_arr.push(arr[i]);
+  }
+  ready_arr.push(replacer);
+  
+  return ready_arr.join("");
 };
 
 export default truncate;
